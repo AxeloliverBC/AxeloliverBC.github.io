@@ -4,35 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Axel Oliver Balboa Cusi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            color: #333;
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            background-color: #f7f7f7;
         }
-        
+
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
         }
-        
+
+        nav {
+            background-color: #555;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #333;
+        }
+
         main {
-            margin: 20px auto;
-            max-width: 600px;
+            max-width: 800px;
+            margin: 40px auto;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
         }
-        
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        li i {
+            margin-right: 10px;
+            color: #333;
+        }
+
         footer {
             background-color: #333;
             color: #fff;
-            padding: 10px;
             text-align: center;
+            padding: 20px;
         }
     </style>
 </head>
@@ -40,28 +86,39 @@
     <header>
         <h1>Axel Oliver Balboa Cusi</h1>
     </header>
-    
+
+    <nav>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+    </nav>
+
     <main>
-        <h2>Sobre mí</h2>
-        <p>¡Hola! Mi nombre es Axel Oliver Balboa Cusi y esta es mi página personal.</p>
-        <p>Aquí puedes encontrar información sobre mí, mis habilidades y mis proyectos.</p>
-        
-        <h2>Habilidades</h2>
-        <ul>
-            <li>Programación en JavaScript, Python y Java</li>
-            <li>Diseño web con HTML, CSS y frameworks como Bootstrap</li>
-            <li>Manejo de bases de datos SQL y NoSQL</li>
-        </ul>
-        
-        <h2>Proyectos</h2>
-        <p>Actualmente estoy trabajando en los siguientes proyectos:</p>
-        <ol>
-            <li>Aplicación web para gestión de tareas</li>
-            <li>Bot de Discord para juegos en línea</li>
-            <li>Análisis de datos con Python</li>
-        </ol>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>¡Hola! Mi nombre es Axel Oliver Balboa Cusi y esta es mi página personal. Aquí puedes encontrar información sobre mí, mis habilidades y mis proyectos.</p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li><i class="fas fa-code"></i>Programación en JavaScript, Python y Java</li>
+                <li><i class="fas fa-desktop"></i>Diseño web con HTML, CSS y frameworks como Bootstrap</li>
+                <li><i class="fas fa-database"></i>Manejo de bases de datos SQL y NoSQL</li>
+            </ul>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <p>Actualmente estoy trabajando en los siguientes proyectos:</p>
+            <ul>
+                <li><i class="fas fa-tasks"></i>Aplicación web para gestión de tareas</li>
+                <li><i class="fab fa-discord"></i>Bot de Discord para juegos en línea</li>
+                <li><i class="fas fa-chart-line"></i>Análisis de datos con Python</li>
+            </ul>
+        </section>
     </main>
-    
+
     <footer>
         <p>&copy; 2023 Axel Oliver Balboa Cusi</p>
     </footer>
